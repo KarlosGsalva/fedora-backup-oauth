@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedora Backup</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+            color: #24292f;
+        }
+        a { color: #0969da; }
+    </style>
+</head>
+<body>
+    <h1>Fedora Backup</h1>
+
+    <p>
+        Fedora Backup is a personal backup solution for
+        securely storing and restoring Linux development
+        environments using Google Drive.
+    </p>
+
+    <h2>Purpose</h2>
+    <p>
+        The application uses rclone to connect to Google Drive
+        and restic to create encrypted, incremental backups.
+    </p>
+
+    <h2>What is backed up?</h2>
+    <ul>
+        <li>Development projects and source code</li>
+        <li>Application configuration files</li>
+        <li>Selected Docker volumes and application data</li>
+        <li>Selected system and user configuration files</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>
+        Backup contents are encrypted locally by restic
+        before being uploaded to Google Drive.
+        The backup password is not sent to Google Drive.
+    </p>
+
+    <h2>Google Drive Access</h2>
+    <p>
+        The application requests the Google Drive drive.file
+        permission to create, access, and manage files
+        used by this application.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+        Read the <a href="privacy.html">Privacy Policy</a>.
+    </p>
+</body>
+</html>
